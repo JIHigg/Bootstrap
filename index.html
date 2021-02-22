@@ -10,6 +10,10 @@
         <title>Great Lakes Cafe</title>
     </head>
     <body style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #2B1200; background-color: white;">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
         <header class="container">
             <div class="row">
                 <div class="col-md">
@@ -35,13 +39,21 @@
             </ul>
         </Nav>
         <br>
-        <br>
-        
-                <div id="Vem">
-                    <div class="col-md">
-                        <h2>Vilka vi är</h2>                   
-                            <div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        <br><div class="col">
+                        <img src="https://via.placeholder.com/300x200?text=Kafe+Bean" alt="Våra Kafe" class="float-right img-fluid rounded">
+                    </div>
+        <div class="container-fluid">
+        <div id="accordion" style="width: 50%;">
+            <div class="card">
+                <div class="card-header" id="Vem">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link text-muted" data-toggle="collapse" data-target="#vemBody" aria-expanded="true" aria-controls="vemBody">Vilka vi är</button>                   
+                            </h2>
+                         </div>
+
+                <div id="vemBody" class="collapse show" aria-labelledby="Vem" data-parent="#accordian">
+                    <div class="card-body text-right">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                 Nulla sollicitudin, dolor ut venenatis vestibulum, lacus 
                                 odio ornare tortor, at sagittis lorem augue ac neque. In 
                                 at arcu faucibus, ullamcorper odio eu, mattis lacus. 
@@ -58,68 +70,90 @@
                                 elementum felis. Integer in nulla eros. Nulla volutpat dui 
                                 in felis lobortis, non varius lectus semper. Maecenas 
                                 suscipit mi eget mi porta, convallis faucibus turpis sodales. 
-                                Nam et massa neque.</p>
-                            </div>
-                    </div>
-                    <div class="col">
-                        <img src="https://via.placeholder.com/300x200?text=Kafe+Bean" alt="Våra Kafe" class="float-right img-fluid rounded">
+                                Nam et massa neque.
                     </div>
                 </div>
-        <br>
-        <div id="Vad">
-            <h2>Vad vi gör</h2>
-            <p>Pellentesque habitant morbi tristique senectus et netus et 
-            malesuada fames ac turpis egestas. Suspendisse tincidunt 
-            lorem eleifend, feugiat ante id, malesuada ante. In hac 
-            habitasse platea dictumst. Ut enim ligula, luctus in aliquet 
-            et, lobortis id purus. Proin pellentesque molestie malesuada. 
-            Nam ut dolor velit. Suspendisse est quam, finibus ac nisi ac, 
-            semper ultrices orci. Vivamus libero libero, suscipit consectetur 
-            lectus id, vestibulum sollicitudin ex. Praesent commodo laoreet 
-            sodales. Nunc bibendum a nunc sed suscipit. Etiam commodo 
-            sapien vitae leo finibus, nec aliquam quam hendrerit.</p>
+            </div>      
+            <div class="card">
+                <div class="card-header" id="Vad">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link text-muted" data-toggle="collapse" data-target="#vadBody" aria-expanded="false" aria-controls="vadBody">Vad Vi Göra</button>                   
+                    </h2>
+                </div>
+            
+                         <div id="vadBody" class="collapse" aria-labelledby="Vad" data-parent="#accordian">
+                            <div class="card-body text-right">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                        Nulla sollicitudin, dolor ut venenatis vestibulum, lacus 
+                                        odio ornare tortor, at sagittis lorem augue ac neque. In 
+                                        at arcu faucibus, ullamcorper odio eu, mattis lacus. 
+                                        Interdum et malesuada fames ac ante ipsum primis in 
+                                        faucibus. In consequat magna feugiat commodo scelerisque. 
+                                        Cras ut quam ipsum. Phasellus et turpis tristique justo 
+                                        elementum ullamcorper vel sit amet quam. Suspendisse 
+                                        imperdiet mi purus, laoreet bibendum purus suscipit non. 
+                                        Pellentesque habitant morbi tristique senectus et netus 
+                                        et malesuada fames ac turpis egestas. Proin consequat nec 
+                                        nisl vitae gravida. Phasellus porttitor tortor at convallis 
+                                        tincidunt. Nullam malesuada enim non mauris volutpat 
+                                        consectetur. Aenean ac scelerisque magna, ullamcorper 
+                                        elementum felis. Integer in nulla eros. Nulla volutpat dui 
+                                        in felis lobortis, non varius lectus semper. Maecenas 
+                                        suscipit mi eget mi porta, convallis faucibus turpis sodales. 
+                                        Nam et massa neque.
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="card-header" id="Värför">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link text-muted" data-toggle="collapse" data-target="#värBody" aria-expanded="false" aria-controls="värBody">Värför Oss</button>                   
+                            </h2>
+                        </div>
+                        <div id="värBody" class="collapse" aria-labelledby="Värför" data-parent="#accordian">
+                            <div class="card-body text-right">
+                                Suspendisse vehicula, purus sed dignissim mattis, nisl nibh 
+                                bibendum est, suscipit venenatis mi sem et diam. Interdum 
+                                et malesuada fames ac ante ipsum primis in faucibus. 
+                                Phasellus tincidunt semper dui, ut eleifend erat tempor et. 
+                                Praesent fringilla ullamcorper orci sit amet fringilla. 
+                                Praesent rutrum, lorem aliquet pretium fermentum, quam quam 
+                                aliquam velit, quis sagittis ex turpis sed eros. 
+                                Pellentesque ut tellus vitae orci finibus mollis sit amet 
+                                eu nunc. Nullam et mollis velit, ultricies dictum mauris. 
+                                Quisque iaculis magna eget diam scelerisque posuere. Duis 
+                                eget eros non nulla euismod fermentum a eu ex. Praesent 
+                                laoreet iaculis mi sit amet feugiat. Cras in risus libero.
+                            </div>
+                        </div>
+                    </div>
         </div>
-        <br>
-        <div id="Värför">
-            <h2>Värför Öss</h2>
-            <p>Suspendisse vehicula, purus sed dignissim mattis, nisl nibh 
-            bibendum est, suscipit venenatis mi sem et diam. Interdum 
-            et malesuada fames ac ante ipsum primis in faucibus. 
-            Phasellus tincidunt semper dui, ut eleifend erat tempor et. 
-            Praesent fringilla ullamcorper orci sit amet fringilla. 
-            Praesent rutrum, lorem aliquet pretium fermentum, quam quam 
-            aliquam velit, quis sagittis ex turpis sed eros. 
-            Pellentesque ut tellus vitae orci finibus mollis sit amet 
-            eu nunc. Nullam et mollis velit, ultricies dictum mauris. 
-            Quisque iaculis magna eget diam scelerisque posuere. Duis 
-            eget eros non nulla euismod fermentum a eu ex. Praesent 
-            laoreet iaculis mi sit amet feugiat. Cras in risus libero.</p>
-        </div>
-        <br>
+    </div>
         <div id="Kafe">
-            <h2>KaffeParty!</h2>
-            <div class="container">
+            <div class="container right img-fluid" style="color: #F1D26C; background-color: #2B1200;">
+                <h2>KaffeParty!</h2>
             <div class="row justify-content-around">
             
-            <div class="col">
-           <img src="https://via.placeholder.com/600x300?text=Cafe+Machine">
-            </div>
-            <div class="col">
-            <p>Ut a dolor sapien. Sed aliquet venenatis libero vitae semper. 
-            Nam facilisis rhoncus velit quis auctor. Quisque placerat 
-            diam in risus eleifend pulvinar. Cras at posuere lorem. 
-            Donec congue iaculis ipsum. Sed efficitur felis neque, in 
-            ultricies leo sagittis a. Nunc at enim tincidunt purus 
-            imperdiet condimentum ut eu neque. Fusce interdum, lacus id 
-            aliquet vulputate, enim turpis mattis leo, vel blandit odio 
-            quam euismod enim. Duis luctus venenatis neque, sed rutrum 
-            nisl facilisis sed. Morbi eget sapien nec nunc efficitur 
-            suscipit tristique dictum nisi. Aliquam ultricies enim in 
-            neque pretium dignissim. Curabitur est felis, eleifend eu 
-            metus nec, viverra ultricies tortor. Lorem ipsum dolor sit 
-            amet, consectetur adipiscing elit. Duis ac lorem interdum, 
-            congue ligula non, imperdiet ex. Curabitur eu odio neque.</p>
-            </div>
+                <div class="col" >
+                    <p>Ut a dolor sapien. Sed aliquet venenatis libero vitae semper. 
+                        Nam facilisis rhoncus velit quis auctor. Quisque placerat 
+                        diam in risus eleifend pulvinar. Cras at posuere lorem. 
+                        Donec congue iaculis ipsum. Sed efficitur felis neque, in 
+                        ultricies leo sagittis a. Nunc at enim tincidunt purus 
+                        imperdiet condimentum ut eu neque. Fusce interdum, lacus id 
+                        aliquet vulputate, enim turpis mattis leo, vel blandit odio 
+                        quam euismod enim. Duis luctus venenatis neque, sed rutrum 
+                        nisl facilisis sed. Morbi eget sapien nec nunc efficitur 
+                        suscipit tristique dictum nisi. Aliquam ultricies enim in 
+                        neque pretium dignissim. Curabitur est felis, eleifend eu 
+                        metus nec, viverra ultricies tortor. Lorem ipsum dolor sit 
+                        amet, consectetur adipiscing elit. Duis ac lorem interdum, 
+                        congue ligula non, imperdiet ex. Curabitur eu odio neque.</p>
+                    </div>
+                    <div class="col">
+                   <img src="https://via.placeholder.com/600x300?text=Cafe+Machine">
+                    </div>
         </div>
             </div>
         </div>
