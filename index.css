@@ -1,8 +1,5 @@
 /*!
- * Bootstrap v4.6.0 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * Modified Bootstrap v4.6.0 by JIHigg för Övning 8 
  */
  :root {
     --blue: #007bff;
@@ -60,7 +57,11 @@
     line-height: 1.5;
     color: #2B1200;
     text-align: left;
-    background-color: #F1D26C;
+    background-color: #fff;
+    background-image: url(Coffee-Beans-Transparent.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
   
   [tabindex="-1"]:focus:not(:focus-visible) {
@@ -194,7 +195,7 @@
   
   img {
     vertical-align: middle;
-    border-style: none;
+    border-style:solid  ;
   }
   
   svg {
@@ -2553,8 +2554,8 @@
   
   .btn-primary {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #2B1200;
+    border-color: #2B1200;
   }
   
   .btn-primary:hover {
@@ -6753,17 +6754,17 @@
   a.bg-primary:hover, a.bg-primary:focus,
   button.bg-primary:hover,
   button.bg-primary:focus {
-    background-color: #0062cc !important;
+    background-color: #CF5C00 !important;
   }
   
   .bg-secondary {
-    background-color: #6c757d !important;
+    background-color: #CF5C00 !important;
   }
   
   a.bg-secondary:hover, a.bg-secondary:focus,
   button.bg-secondary:hover,
   button.bg-secondary:focus {
-    background-color: #545b62 !important;
+    background-color: #F1D26C !important;
   }
   
   .bg-success {
